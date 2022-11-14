@@ -1,14 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package fatec.poo.model;
 
 /**
  *
- * @author Deivi
+ * @author Deivid
  */
-public class Hospede {
+public class Hospede extends Pessoa{
+    private String cpf;
+    private double txDesconto;
+    private QuartoHotel quartoHotel;
+    
+    //CONSTRUTOR
+    public Hospede(String cpf, String nome) {
+        super(nome);
+        this.cpf = cpf;
+    }
+    
+    //SETS
+    public void setTxDesconto(double txDesconto) {
+        this.txDesconto = txDesconto/100;
+    }
+
+    public void setQuartoHotel(QuartoHotel quartoHotel) {
+        this.quartoHotel = quartoHotel;
+    }
+    
+    //GETS
+    public String getCpf() {
+        return cpf;
+    }
+
+    public double getTxDesconto() {
+        return txDesconto;
+    }
+
+    public QuartoHotel getQuartoHotel() {
+        return quartoHotel;
+    }
+    
+    
+    
+    
     
 }
