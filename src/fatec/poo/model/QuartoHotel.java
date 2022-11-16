@@ -37,11 +37,11 @@ public class QuartoHotel {
         taxaDesconto = taxaDesconto/100;
         double valorHospedagem =0;
         situacao = false;
-        dataEntrada = null;
+        dataEntrada ="";
         hospede = null;
         atendente = null;
-        valorHospedagem = (dias * valorDiaria) - ((dias * valorDiaria) * taxaDesconto);
-        totalFaturado += valorHospedagem;
+        valorHospedagem += (dias * valorDiaria) - (dias * taxaDesconto);
+        totalFaturado = valorHospedagem;
         return valorHospedagem;
     }
     
