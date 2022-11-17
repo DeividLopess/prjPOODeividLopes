@@ -39,6 +39,7 @@ public class QuartoHotel {
         situacao = false;
         dataEntrada ="";
         hospede = null;
+        atendente.removeQuartoHotel(this);
         atendente = null;
         valorHospedagem += (dias * valorDiaria) - (dias * taxaDesconto);
         totalFaturado = valorHospedagem;

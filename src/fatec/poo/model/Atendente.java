@@ -34,6 +34,13 @@ public class Atendente extends Pessoa{
         quartoHotel.add(q);
     }
     
-    
+    //REMOVE QUARTO Hotel
+    public void removeQuartoHotel(QuartoHotel q){
+        for (int i = 0; i < quartoHotel.size(); i++) {
+            if(q == quartoHotel.get(i)){
+                quartoHotel.remove(i);
+            }
+        }
+    }
     
 }
